@@ -4,7 +4,7 @@
   hosts: localhosts
   vars_prompt:
   -name: USERNAME
-   propmt: please enter your username
+   prompt: please enter your username
    private: false
   -name: PASSWORD
    prompt: please enter your password
