@@ -13,7 +13,7 @@
       docker: 1
     
     realtime: true
-    tasks:
+  tasks:
       - name: print the varibales
         ansible.builtin.debug:
           msg: "Course: {{Course}}, Tools covered: {{tools}}, Experience is: {{experience}}, is real project: {{realtime}}"
