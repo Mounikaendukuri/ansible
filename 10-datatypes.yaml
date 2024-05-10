@@ -11,7 +11,8 @@
       - aws
       - docker
       - shell
+    realtime: true
     tasks:
       - name: print the varibales
         ansible.builtin.debug:
-          msg: "my course is {{course}} and i have experience of {{experience}} and the tools covered is {{tools}}"
+          msg: "Course: {{Course}}, Tools covered: {{tools}}, Experience is: {{experience}}, is real project: {{realtime}}"
