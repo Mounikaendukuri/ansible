@@ -1,14 +1,14 @@
 #decalring variables form the prompt
 
 - name: variables form the prompt
-  hosts: localhosts
+  hosts: localhost
   vars_prompt:
   -name: USERNAME
-   prompt: please enter your username
-   private: false
+    prompt: please enter your username
+     private: false
   -name: PASSWORD
-   prompt: please enter your password
-   private: true
+    prompt: please enter your password
+    private: true
   tasks:
     -name: accessging the variables form the propt
      ansible.builtin.debug:
