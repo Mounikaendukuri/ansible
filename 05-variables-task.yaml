@@ -11,7 +11,7 @@
       vars:
         course: "ansible"
       ansible.builtin.debug:
-        msg: "im learning {{}} with the trainer {{trainer}} and the duration is {{duration}}"
+        msg: "im learning {{course}} with the trainer {{trainer}} and the duration is {{duration}}"
     - name: declaring variable from the top of playbook
       ansible.builtin.debug:
-        msg: "im learning {{}} with the trainer {{trainer}} and the duration is {{duration}}"
+        msg: "im learning {{course}} with the trainer {{trainer}} and the duration is {{duration}}"
