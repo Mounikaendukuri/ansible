@@ -5,4 +5,4 @@
   tasks:
     - name: print the info
       ansible.builtin.debug:
-      msg: "my mother name is radha and {{mother}} and i studied {{studied}} and got job as {{job}} "
+        msg: "my mother name is radha and {{mother}} and i studied {{studied}} and got job as {{job}} "
