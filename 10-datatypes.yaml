@@ -1,0 +1,17 @@
+- name: data types
+  hosts: localhost
+  vars:
+    course: devops with aws
+    experience:
+      devops: 3
+      aws: 2
+      docker: 1
+    tools:
+      - linux
+      - aws
+      - docker
+      - shell
+    tasks:
+      - name: print the varibales
+        ansible.builtin.debug:
+          msg: "my course is {{course}} and i have experience of {{experience}} and the tools covered is {{tools}}"
