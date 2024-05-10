@@ -7,12 +7,16 @@
       aws: 2
       docker: 1
     tools:
-      - linux
-      - aws
-      - docker
-      - shell
+    - linux
+    - aws
+    - docker
+    - shell
     realtime: true
     tasks:
       - name: print the varibales
         ansible.builtin.debug:
           msg: "Course: {{Course}}, Tools covered: {{tools}}, Experience is: {{experience}}, is real project: {{realtime}}"
+
+
+
+    
