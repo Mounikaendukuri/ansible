@@ -1,0 +1,11 @@
+#declaring variables 
+- name: variables
+  hosts: localhost
+  vars:
+    branch: "mechanical"
+    college: "viswam"
+    place: "angallu"
+  tasks:
+    - name: print the info
+      ansible.builtin.debug:
+        msg: "my name is mounika studied in {{college}} and branch {{branch}} place of college is {{place}}"
