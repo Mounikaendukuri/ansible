@@ -1,4 +1,4 @@
-#declaring variables 
+#declaring variables in playbook
 - name: variables
   hosts: localhost
   vars:

@@ -1,0 +1,17 @@
+#in this example we are learning the variables at task level
+
+- name: variables at task level
+  hosts: localhost
+  vars:
+    course: "devops"
+    trainer: "sivakumar"
+    duration: "3.5 months"
+  tasks:
+    - name: overriding with task varibale 
+      vars:
+        course: "ansible"
+      ansible.builtin.debug:
+        msg: "im learning {{}} with the trainer {{trainer}} and the duration is {{duration}}"
+    - name: declaring variable from the top of playbook
+      ansible.builtin.debug:
+        msg: "im learning {{}} with the trainer {{trainer}} and the duration is {{duration}}"
