@@ -2,15 +2,16 @@
   hosts: localhost
   vars:
     course: devops with aws
-    experience:
-      devops: 3
-      aws: 2
-      docker: 1
     tools:
     - linux
     - aws
     - docker
     - shell
+    experience:
+      devops: 3
+      aws: 2
+      docker: 1
+    
     realtime: true
     tasks:
       - name: print the varibales
