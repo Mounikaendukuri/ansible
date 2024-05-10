@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars_files:
+  - vars.yaml
+  tasks:
+    - name: print the info
+      ansible.builtin.debug:
+      msg: "my mother name is radha and {{mother}} and i studied {{studied}} and got job as {{job}} "
