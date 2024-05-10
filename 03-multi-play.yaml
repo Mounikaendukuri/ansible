@@ -4,7 +4,6 @@
   - name: play1 & task1
     ansible.builtin.debug:
       msg: "hello this mounika reddy"
-      msg: "learning ansible"
   - name: play2 & task2
     ansible.builtin.debug:
       msg: "i'm mechanical engineer"
