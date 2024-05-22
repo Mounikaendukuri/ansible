@@ -8,6 +8,7 @@
 
     - name: wish
       ansible.builtin.debug:
-      msg: "hello ansible"
+        msg: "hello ansible"
+     
 
 
