@@ -8,7 +8,7 @@
         - ravi
         - tarun
       ansible.builtin.debug:
-        msg: "{{items}}"
+        msg: "{{item}}"
       ignore_errors: yes
 
 - name: demo on loops
