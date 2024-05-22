@@ -10,6 +10,10 @@
     - name : print the user info
       ansible.builtin.debug:
         msg: "{{USER}}"
+      
+    - name : create the user if not exists
+      ansible.builtin.command:
+        when: rc !=0 #conditoons rc =0 ,means user exists rc ! =0 means user doesnot exist
     
 
     - name: wish
