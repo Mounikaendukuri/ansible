@@ -3,4 +3,4 @@
   tasks:
     - name: assigning the duplicate value
       ansible.builtin.debug:
-        msg: "hello {{course}}"
+        msg: "hello {{wish | default('mounika')}}"
