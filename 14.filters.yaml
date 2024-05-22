@@ -61,5 +61,5 @@
     - name: list to dict
       ansible.builtin.debug:
         msg: "before converting {{list}}"
-        msg: "after converting {{ list | lists2dict}}"
+        msg: "after converting {{ list | items2dict}}"
 
