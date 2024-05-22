@@ -1,0 +1,6 @@
+- name: checking the filter/ functions
+  hosts: localhost
+  tasks:
+    - name: assigning the duplicate value
+      ansible.builtin.debug:
+        msg: "hello {{course}}"
