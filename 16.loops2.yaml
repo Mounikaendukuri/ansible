@@ -4,8 +4,8 @@
   tasks:
     - name: pacakge
       loop:
-        - {mouni: 'mysql' , state: 'installed'}
-        - {mouni: 'nginx' , state: 'absent'}
+        - {name: 'mysql' , state: 'installed'}
+        - {name: 'nginx' , state: 'absent'}
       ansible.builtin.dnf:
-        mouni: "{{item.name}}"
+        name: "{{item.name}}"
         state: "{{item.state}}"
