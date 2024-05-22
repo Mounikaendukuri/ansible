@@ -4,3 +4,12 @@
     - name: assigning the duplicate value
       ansible.builtin.debug:
         msg: "hello {{wish | default('mounika')}}"
+
+- name: uppercase
+  hosts: localhost
+  vars:
+    greeting: "hello, Mounika Reddy"
+  tasks:
+    - name : uppercase
+      ansible.builtin.debug:
+        msg: "{{greeting | upper}}"
