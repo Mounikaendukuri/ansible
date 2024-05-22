@@ -16,3 +16,24 @@
     - name : lowercase
       ansible.builtin.debug:
         msg: "{{greeting | lower}}"
+
+- name: removing duplicates
+  hosts: localhost
+  vars:
+    number: [1,2,2,3,4,4,5]
+  tasks:
+    - name: duplicate
+      ansible.builtin.debug:
+        msg: "{{number | unique}}"
+
+- name: min and max values
+  hosts: localhost
+  vars:
+    value: [10, 25, 35, 85]
+  tasks:
+    - name: min value
+      ansible.builtin.debug:
+        msg: "min value {{value | min}}"
+    - name : max value
+      ansible.builtin.debug:
+        msg: "max value {{value | max}}" 
