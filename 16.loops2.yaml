@@ -1,0 +1,11 @@
+- name: install & unintsall the packages
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: pacakge
+      loop:
+        - {name: 'mysql' , state: 'installed'}
+        - {name: 'nginx' , state: 'absent'}
+      ansible.builtin.dnf:
+        name: "{{item.name}}"
+        state: "{{item.state}}"
