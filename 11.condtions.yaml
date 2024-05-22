@@ -4,13 +4,16 @@
   tasks :
     - name : check the user exists or not
       ansible.builtin.command: id expense
+      register : USER
       ignore_errors: yes
 
-    
-      
+    - name: print the user info
+      ansible.builtin.debug:
+        msg: msg info "{{USER}}"
+
     - name : create the user if not exists
       ansible.builtin.command: useradd expense
-      when: rc !=0 #conditoons rc =0 ,means user exists rc ! =0 means user doesnot exist
+      when: USER.rc !=0 #conditoons rc =0 ,means user exists rc ! =0 means user doesnot exist
     
 
     - name: wish
