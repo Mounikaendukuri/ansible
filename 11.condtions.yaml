@@ -1,0 +1,13 @@
+- name : writing confitions
+  hosts : localhost
+  become : yes
+  tasks :
+    - name : check the user exists or not
+      ansible.builtin.command: id expense
+    
+
+    - name: wish
+      ansible.builtin.debug:
+      msg: "hello ansible"
+
+
