@@ -13,7 +13,7 @@
       
     - name : create the user if not exists
       ansible.builtin.command: useradd expense
-        when: rc !=0 #conditoons rc =0 ,means user exists rc ! =0 means user doesnot exist
+      when: rc !=0 #conditoons rc =0 ,means user exists rc ! =0 means user doesnot exist
     
 
     - name: wish
