@@ -55,8 +55,8 @@
   hosts: localhost
   vars:
     list:
-      - {'key': 'course' 'value': 'devops'}
-      - {'key': 'learner' 'value': 'mounika'}
+      - {'key': 'course', 'value': 'devops'}
+      - {'key': 'learner' ,'value': 'mounika'}
   tasks:
     - name: list to dict
       ansible.builtin.debug:
