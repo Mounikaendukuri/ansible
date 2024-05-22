@@ -13,3 +13,6 @@
     - name : uppercase
       ansible.builtin.debug:
         msg: "{{greeting | upper}}"
+    - name : lowercase
+      ansible.builtin.debug:
+        msg: "{{greeting | lower}}"
